@@ -7,8 +7,9 @@ app.use(express.json());
 
 
 app.get('/', (req, res) => {
-    res.send("Hi");
+    res.send('Hi! Please hit the URL below for APIs: <a href="/api/posts/getPosts">/Posts</a>');
 });
+
 
 app.use('/api',require('./routes'))
 
