@@ -3,10 +3,11 @@ require('dotenv').config();
 
 const connection = mysql.createPool({
     host: process.env.HOST,
-    user: process.env.USER,
+    user: process.env.USERNAME,
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
 });
+    console.log("🚀 ~ process.env.PASSWORD:", process.env.PASSWORD)
 
 // Check MySQL connection
 connection.getConnection((err, conn) => {
