@@ -1,6 +1,5 @@
 const express = require('express');
 const connection = require('./config/connection');
-require('dotenv').config();
 
 const app = express();
 app.use(express.json());
